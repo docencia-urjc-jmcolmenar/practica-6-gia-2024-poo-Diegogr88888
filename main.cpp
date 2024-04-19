@@ -3,9 +3,9 @@
 
 int main() {
     int opcion;
-    const int MAX_CONTACTOS = 5;
 
-    Agenda agenda = Agenda(MAX_CONTACTOS);
+    Agenda agenda = Agenda();
+
 
     do {
         printf("\n --- MENU --- \n");
@@ -14,7 +14,7 @@ int main() {
         printf("3. Borrar persona\n");
         printf("0. SALIR\n");
 
-        printf("\nElija una opción: ");
+        printf("\nElija una opcion: ");
         scanf("%i", &opcion);
 
         switch (opcion) {
